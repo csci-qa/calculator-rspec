@@ -9,9 +9,8 @@ class Calculator
 		num1 * num2
 	end
 	def divide(num1, num2)
-			num1 / num2
 			if num2 == 0 
-				puts "You can't divide by zero."
+				"You can't divide by zero."
 			else
 				num1 / num2
 			end	
