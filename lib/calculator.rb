@@ -10,5 +10,7 @@ class Calculator
 	end
 	def divide(num1, num2)
 		num1 / num2
+		rescue ZeroDivisionError
+			0.0
 	end 
 end
