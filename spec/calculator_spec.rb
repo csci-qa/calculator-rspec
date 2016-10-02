@@ -42,19 +42,9 @@ describe Calculator do
 			expect(calc.divide(10, 5)).to eq 2
 		end
 		
-		it 'gives an error when divided by 0' do
+		it 'gives a ZeroDivisionError which equals zero when divided by 0' do
 			calc = Calculator.new
-			begin
-			  	 # Try to divide by zero.
-				i = calc.divide(12,0)
-			rescue ZeroDivisionError
-			    # Handle the error.
-			    puts "Programming Error: Division By Zero"
-			end
-
-			# Display final value.
-		puts i
-
+			expect(calc.divide(12,0)).to eq 0
 		end
 	end
 
